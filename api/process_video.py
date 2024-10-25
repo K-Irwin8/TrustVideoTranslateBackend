@@ -6,10 +6,14 @@ import moviepy.editor as mp
 from moviepy.video.tools.subtitles import SubtitlesClip
 import pysrt
 import os
+from dotenv import load_dotenv
 from openai import OpenAI
 
 # Set your OpenAI API key
 #openai.api_key = 'sk-proj-V7csbh7dlTK4XfMjA0PsT3BlbkFJdJmVfM1rwPzYILTysW21'
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key)
 client = OpenAI(api_key = 'sk-proj-V7csbh7dlTK4XfMjA0PsT3BlbkFJdJmVfM1rwPzYILTysW21')
 
 # Your existing functions with minimal changes
