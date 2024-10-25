@@ -14,7 +14,7 @@ from openai import OpenAI
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
-client = OpenAI(api_key = 'sk-proj-V7csbh7dlTK4XfMjA0PsT3BlbkFJdJmVfM1rwPzYILTysW21')
+#client = OpenAI(api_key = 'sk-proj-V7csbh7dlTK4XfMjA0PsT3BlbkFJdJmVfM1rwPzYILTysW21')
 
 # Your existing functions with minimal changes
 def extract_audio(video_file, audio_file):
